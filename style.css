@@ -1,0 +1,17 @@
+/* barra de navegación */
+
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+/* colocamos un punto de quiebre que quiere decir que a partir de los 767 para abajo no se muestre el icono de nuestro pagina */
+@media screen and (max-width: 767px){
+    .navbar-brand {
+        display: none;
+    }
+}
