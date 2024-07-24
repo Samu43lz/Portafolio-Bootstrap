@@ -1,4 +1,4 @@
-/* barra de navegación */
+/* Barra de navegación */
 
 .navbar {
     padding: 2rem;
@@ -9,9 +9,56 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/* Estilos Generales */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Exo 2", sans-serif;
+}
+
+
+/* Sección Hero/Principal */
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 540px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;   
+}
+
+.hero-image {
+    width: 200px;
+    border-radius: 50%;  /* Ó aplicar la clase de Bootstrap  ".rounded-circle" , colocare ambos */
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* Adaptable Responsivo */
 /* colocamos un punto de quiebre que quiere decir que a partir de los 767 para abajo no se muestre el icono de nuestro pagina */
+
 @media screen and (max-width: 767px){
     .navbar-brand {
         display: none;
+    }
+}
+                                        /* a patir de los 700 px : */
+@media screen and (min-width: 700px){
+    .hero-inferior-image {
+        max-width: 600px;
     }
 }
