@@ -329,6 +329,63 @@ button:hover {
     font-size: 1.3rem;
     transition: all 0.2s ease-in-out;
 }
+
+/* Pie de página  (footer) */
+
+footer {
+    min-height: 500px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2 ease-in;
+}
+
+.iconos-redes-sociales i {    
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+    padding: 10px 15px 10px 15px;  /* sin colocar este padding y el border radius y cambiando el background-color de .iconos-redes-sociales i:hover a  solo  "color : black" tendremos un efecto diferente! */
+    border-radius: 50%           /* y agregando el border rgb azul a la clase  a:hover */
+}
+
+.iconos-redes-sociales a:hover {     /*el fondo sera negro al pasar el cursor */
+    background-color: white;
+    
+}
+
+.iconos-redes-sociales i:hover { /* el icono sera negro cuando se pase el cursor , lo que creara un buen contraste */
+    background-color: black;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
 /* Adaptable Responsivo */
 /* colocamos un punto de quiebre que quiere decir que a partir de los 767 para abajo no se muestre el icono de nuestro pagina */
 
